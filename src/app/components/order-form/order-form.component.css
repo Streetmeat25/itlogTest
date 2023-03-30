@@ -1,0 +1,12 @@
+.footer-form{
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 77px;
+}
+.footer-input{
+  margin-bottom: 25px;
+}
+.my-button{
+
+}
