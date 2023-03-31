@@ -3,18 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { OrderFormComponent } from './components/order-form/order-form.component';
-import { PizzaCardComponent } from './components/pizza-card/pizza-card.component';
+import {DataService} from "./services/data.service";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrderFormComponent,
-    PizzaCardComponent
+    OrderFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

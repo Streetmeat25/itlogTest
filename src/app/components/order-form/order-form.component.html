@@ -1,12 +1,24 @@
-<!--  <form class="footer-form">-->
-<!--    <input placeholder="Ваше имя">-->
-<!--    <input placeholder="Адрес доставки">-->
-<!--    <input placeholder="Телефон">-->
-<!--    <button class="my-button">Оформить заказ</button>-->
-<!--  </form>-->
-<div class="footer-form">
-  <input class="footer-input" placeholder="Ваше имя">
-  <input class="footer-input" placeholder="Адрес доставки">
-  <input class="footer-input" placeholder="Телефон">
-  <button class="my-button">Оформить заказ</button>
-</div>
+
+<form class="footer-form">
+  <input
+    type="text"
+    [(ngModel)]="loginForm.name"
+    class="footer-input"
+    placeholder="Ваше имя"
+    name="login"
+  >
+  <input
+    type="text"
+    [(ngModel)]="loginForm.address"
+    class="footer-input" placeholder="Адрес доставки"
+    name="address"
+  >
+  <input
+    type="text"
+    [(ngModel)]="loginForm.phone"
+    class="footer-input"
+    placeholder="Телефон"
+    name="phone"
+  >
+  <button class="my-button" (click)="printForm()">Оформить заказ</button>
+</form>

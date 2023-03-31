@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './order-form.component.html',
   styleUrls: ['./order-form.component.css']
 })
-export class OrderFormComponent {
+export class OrderFormComponent{
 
+  loginForm: any = {
+    name: '',
+    address: '',
+    phone: ''
+  }
+  printForm(){
+    console.log(this.loginForm)
+  }
 }

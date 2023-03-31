@@ -1,7 +1,8 @@
 <div class="header">
   <div class="header-line">
      <div class="header-logo">
-       <h1 class="header-logo-item">pizza <br>cheff</h1>
+       <img src="assets/logo.png">
+       <h1 class="header-logo-item">PIZZA <br>CHEFF</h1>
      </div>
      <div class="menu">
        <a class="menu-item" href="">Пиццы</a>
@@ -14,21 +15,28 @@
 <div class="main">
   <div class="main-up">
     <div class="info">
-      <h1>Самая вкусная пицца в мире только в PizzaCheff</h1>
+      <span class="info-text1">Самая вкусная пицца в мире</span>
+      <span class="info-text2">только в Pizza Cheff</span>
       <div class="info-blocks">
         <div class="info-block">
-          <h2> Лучшее тесто</h2>
-          Мы создаем тесто только из отборной итальянской муки наивысшего качества
+          <img src="assets/hop.png">
+          <div class="info-block-text">
+            <h2> Лучшее тесто</h2>
+            Мы создаем тесто только из отборной итальянской муки наивысшего качества
+          </div>
         </div>
         <div class="info-block">
+          <img src="assets/kitchen-pack.png">
           <h2>Лучшие повора</h2>
           Пиццы готовят самые профессиональные итальянские повора
         </div>
         <div class="info-block">
+          <img src="assets/seo-and-web.png">
           <h2> Гарантия качества</h2>
           Наша пиццерия получила множество наград и признаний по всему миру
         </div>
         <div class="info-block">
+          <img src="assets/holidays.png">
           <h2>Отборные рецетпы</h2>
           Мы используем рецепты от мировых лидеров в изготовлении пиццы
         </div>
@@ -38,59 +46,17 @@
       </button>
     </div>
     <div class="info-pizza">
-      pizza img
+      <img src="assets/pizza_big.png" alt="">
     </div>
   </div>
   <div class="main-down">
     <h1 class="main-down-title"> Выберите свою любимую пиццу</h1>
     <div class="pizzas">
-      <div class="pizza">
-        <img class="pizza-image" src="https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png">
-        <span>Мясная делюкс</span>
-        <span>Пепперони, лук, беко, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
-        <button class="my-button"> В корзину</button>
-      </div>
-      <div class="pizza">
-        <img class="pizza-image" src="https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png">
-        <span>Мясная делюкс</span>
-        <span>Пепперони, лук, беко, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
-        <button class="my-button"> В корзину</button>
-      </div>
-      <div class="pizza">
-        <img class="pizza-image" src="https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png">
-        <span>Мясная делюкс</span>
-        <span>Пепперони, лук, беко, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
-        <button class="my-button"> В корзину</button>
-      </div>
-      <div class="pizza">
-        <img class="pizza-image" src="https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png">
-        <span>Мясная делюкс</span>
-        <span>Пепперони, лук, беко, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
-        <button class="my-button"> В корзину</button>
-      </div>
-      <div class="pizza">
-        <img class="pizza-image" src="https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png">
-        <span>Мясная делюкс</span>
-        <span>Пепперони, лук, беко, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
-        <button class="my-button"> В корзину</button>
-      </div>
-      <div class="pizza">
-        <img class="pizza-image" src="https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png">
-        <span>Мясная делюкс</span>
-        <span>Пепперони, лук, беко, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
-        <button class="my-button"> В корзину</button>
-      </div>
-      <div class="pizza">
-        <img class="pizza-image" src="https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png">
-        <span>Мясная делюкс</span>
-        <span>Пепперони, лук, беко, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
-        <button class="my-button"> В корзину</button>
-      </div>
-      <div class="pizza">
-        <img class="pizza-image" src="https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png">
-        <span>Мясная делюкс</span>
-        <span>Пепперони, лук, беко, томатная паста, колбаски, перец, грибы, соус чили, ананасы</span>
-        <button class="my-button"> В корзину</button>
+      <div class="pizza" *ngFor="let i of data">
+        <img [src]="i.image">
+        <span>{{i.title}}</span>
+        <span>{{i.description}}</span>
+        <button class="my-button">В корзину</button>
       </div>
     </div>
   </div>
@@ -108,6 +74,6 @@
   <app-order-form></app-order-form>
 
   <div class="footer-image">
-
+    <img src="assets/pizzzzza.png" alt="">
   </div>
 </div>

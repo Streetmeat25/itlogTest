@@ -1,0 +1,8 @@
+@font-face{
+  font-family: 'MullerBlack';
+  src: url("Muller-Trial-Black.woff") format('woff');
+}
+@font-face{
+  font-family: Raleway-Black;
+  src: url("Raleway-Black.ttf") format('truetype');
+}
