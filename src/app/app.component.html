@@ -21,24 +21,30 @@
         <div class="info-block">
           <img src="assets/hop.png">
           <div class="info-block-text">
-            <h2> Лучшее тесто</h2>
-            Мы создаем тесто только из отборной итальянской муки наивысшего качества
+            <span class="info-block-text-title">Лучшее тесто</span>
+            <span class="info-block-text-description">Мы создаем тесто только из отборной итальянской муки наивысшего качества</span>
           </div>
         </div>
         <div class="info-block">
           <img src="assets/kitchen-pack.png">
-          <h2>Лучшие повора</h2>
-          Пиццы готовят самые профессиональные итальянские повора
+          <div class="info-block-text">
+            <span class="info-block-text-title">Лучшие повора</span>
+            <span class="info-block-text-description">Пиццы готовят самые профессиональные итальянские повора</span>
+          </div>
         </div>
         <div class="info-block">
           <img src="assets/seo-and-web.png">
-          <h2> Гарантия качества</h2>
-          Наша пиццерия получила множество наград и признаний по всему миру
+          <div class="info-block-text">
+            <span class="info-block-text-title">Гарантия качества</span>
+            <span class="info-block-text-description">Наша пиццерия получила множество наград и признаний по всему миру</span>
+          </div>
         </div>
         <div class="info-block">
           <img src="assets/holidays.png">
-          <h2>Отборные рецетпы</h2>
-          Мы используем рецепты от мировых лидеров в изготовлении пиццы
+          <div class="info-block-text">
+            <span class="info-block-text-title">Отборные рецетпы</span>
+            <span class="info-block-text-description">Мы используем рецепты от мировых лидеров в изготовлении пиццы</span>
+          </div>
         </div>
       </div>
       <button class="my-button">
@@ -54,8 +60,8 @@
     <div class="pizzas">
       <div class="pizza" *ngFor="let i of data">
         <img [src]="i.image">
-        <span>{{i.title}}</span>
-        <span>{{i.description}}</span>
+        <span class="pizza-title">{{i.title}}</span>
+        <span class="pizza-description">{{i.description}}</span>
         <button class="my-button">В корзину</button>
       </div>
     </div>

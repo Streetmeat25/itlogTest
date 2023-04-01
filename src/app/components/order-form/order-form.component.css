@@ -6,7 +6,19 @@
 }
 .footer-input{
   margin-bottom: 25px;
+  font-family: MullerRegular;
+  font-size: 18px;
+  color: #cba86e;
+  border: 1px solid #b99150;
+}
+.footer-input::placeholder{
+  color: #cba86e;
+
 }
 .my-button{
-
+  font-family: MullerBold;
+  font-size: 16px;
+  color: #382400;
+  border: none;
+  background-color: #ffaf18;
 }
