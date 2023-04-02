@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-order-form',
@@ -11,6 +11,13 @@ export class OrderFormComponent{
     name: '',
     address: '',
     phone: ''
+  }
+
+  inputCheck(event:any){
+    this.loginForm.name = event.target.value.replace(/\./g, "")
+
+    /*
+    * if(event.targer.value содержит точку) то меняем строку*/
   }
   printForm(){
     console.log(this.loginForm)

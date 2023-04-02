@@ -8,17 +8,25 @@
   margin-bottom: 25px;
   font-family: MullerRegular;
   font-size: 18px;
+  line-height: 45px;
   color: #cba86e;
   border: 1px solid #b99150;
+  width: 280px;
+  height: 10px;
+  padding: 25px 25px;
 }
 .footer-input::placeholder{
   color: #cba86e;
-
 }
+.footer-input:focus-visible{
+  outline: 1px solid #b99150;
+}
+
 .my-button{
   font-family: MullerBold;
   font-size: 16px;
   color: #382400;
   border: none;
   background-color: #ffaf18;
+  cursor: pointer;
 }

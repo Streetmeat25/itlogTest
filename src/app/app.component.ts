@@ -23,6 +23,9 @@ export class AppComponent implements OnInit{
       console.log(pizza)
     }
   }
+  click(){
+    alert("click")
+  }
 
 }
 

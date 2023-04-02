@@ -21,33 +21,33 @@
         <div class="info-block">
           <img src="assets/hop.png">
           <div class="info-block-text">
-            <span class="info-block-text-title">Лучшее тесто</span>
+            <span class="info-block-text-title">ЛУЧШЕЕ ТЕСТО</span>
             <span class="info-block-text-description">Мы создаем тесто только из отборной итальянской муки наивысшего качества</span>
           </div>
         </div>
         <div class="info-block">
           <img src="assets/kitchen-pack.png">
           <div class="info-block-text">
-            <span class="info-block-text-title">Лучшие повора</span>
+            <span class="info-block-text-title">ЛУЧШИЕ ПОВОРА</span>
             <span class="info-block-text-description">Пиццы готовят самые профессиональные итальянские повора</span>
           </div>
         </div>
         <div class="info-block">
           <img src="assets/seo-and-web.png">
           <div class="info-block-text">
-            <span class="info-block-text-title">Гарантия качества</span>
+            <span class="info-block-text-title">ГАРАНТИЯ КАЧЕСТВА</span>
             <span class="info-block-text-description">Наша пиццерия получила множество наград и признаний по всему миру</span>
           </div>
         </div>
         <div class="info-block">
           <img src="assets/holidays.png">
           <div class="info-block-text">
-            <span class="info-block-text-title">Отборные рецетпы</span>
+            <span class="info-block-text-title">ОТБОРНЫЕ РЕЦЕПТЫ</span>
             <span class="info-block-text-description">Мы используем рецепты от мировых лидеров в изготовлении пиццы</span>
           </div>
         </div>
       </div>
-      <button class="my-button">
+      <button>
         Выбрать пиццу
       </button>
     </div>
@@ -59,10 +59,16 @@
     <h1 class="main-down-title"> Выберите свою любимую пиццу</h1>
     <div class="pizzas">
       <div class="pizza" *ngFor="let i of data">
-        <img [src]="i.image">
-        <span class="pizza-title">{{i.title}}</span>
-        <span class="pizza-description">{{i.description}}</span>
-        <button class="my-button">В корзину</button>
+        <div class="pizza-up">
+          <img [src]="i.image" (click)="click()">
+          <div class="pizza-text">
+            <span class="pizza-title">{{i.title}}</span>
+            <span class="pizza-description">{{i.description}}</span>
+          </div>
+        </div>
+
+
+        <button>В корзину</button>
       </div>
     </div>
   </div>
@@ -73,7 +79,7 @@
     <span class="footer-title-color2">Доставим заказ за 30<br>минут!</span>
     <span class="footer-description"> Мы  гарантированно доставим вашу пиццу за 30 минут с момента
     оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку
-    на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный
+    на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!
     </span>
   </div>
 
