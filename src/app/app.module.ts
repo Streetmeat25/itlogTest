@@ -6,11 +6,13 @@ import { OrderFormComponent } from './components/order-form/order-form.component
 import {DataService} from "./services/data.service";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrderFormComponent
+    OrderFormComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

@@ -66,11 +66,10 @@
             <span class="pizza-description">{{i.description}}</span>
           </div>
         </div>
-
-
         <button>В корзину</button>
       </div>
     </div>
+    <app-modal *ngIf="isClicked" [image]="imageSrc" (onClick)="click($event)"></app-modal>
   </div>
 </div>
 <div class="footer">

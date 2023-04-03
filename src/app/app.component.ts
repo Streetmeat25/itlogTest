@@ -9,21 +9,20 @@ import {Data} from "@angular/router";
   providers: [DataService]
 })
 export class AppComponent implements OnInit{
-  title: string = 'pizza';
-
-  constructor(private dataService: DataService) {}
-
-
 
   data: any = []
+  imageSrc=''
+  isClicked = false
+  constructor(private dataService: DataService) {}
+
   ngOnInit() {
     this.data = this.dataService.getPizzas();
-
-
   }
   click(event:any){
-    console.log(event)
+    this.isClicked = !this.isClicked
+    this.imageSrc = event.target.currentSrc
   }
+
 
 }
 
