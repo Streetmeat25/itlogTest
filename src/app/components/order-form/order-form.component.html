@@ -1,25 +1,32 @@
 
-<form class="footer-form">
+<div class="footer-form">
   <input
     type="text"
     [(ngModel)]="loginForm.name"
+    #name = "ngModel"
     class="footer-input"
     placeholder="Ваше имя"
-    name="login"
+    required
     (keyup)="inputCheck($event)"
   >
   <input
     type="text"
     [(ngModel)]="loginForm.address"
+    #address = "ngModel"
+    required
     class="footer-input" placeholder="Адрес доставки"
-    name="address"
   >
   <input
     type="text"
-    [(ngModel)]="loginForm.phone"
     class="footer-input"
     placeholder="Телефон"
-    name="phone"
+    [(ngModel)]="loginForm.phone"
+    #phone = "ngModel"
+    required
+    pattern="[0-9]{11}"
   >
-  <button class="my-button"  (click)="sendData()" >Оформить заказ</button>
-</form>
+  <button class="my-button" [disabled]="(name.invalid && name.touched)
+          || (address.invalid && address.touched)
+          || (phone.invalid && phone.touched)"
+          (click)="sendData()" >Оформить заказ</button>
+</div>
