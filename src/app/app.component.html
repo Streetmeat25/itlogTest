@@ -60,7 +60,7 @@
     <div class="pizzas">
       <div class="pizza" *ngFor="let i of data">
         <div class="pizza-up">
-          <img [src]="i.image" (click)="click()">
+          <img [src]="i.image" (click)="click($event)">
           <div class="pizza-text">
             <span class="pizza-title">{{i.title}}</span>
             <span class="pizza-description">{{i.description}}</span>

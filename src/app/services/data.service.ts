@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-
 
   private data: any = [
     {
@@ -49,10 +49,14 @@ export class DataService {
     }
 
   ];
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getPizzas(): string {
     return this.data;
+  }
+  postData(body:any){
+    console.log(body)
+    return this.http.post('server-address', body)
   }
 
 }

@@ -19,12 +19,10 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.data = this.dataService.getPizzas();
 
-    for( let pizza of this.data){
-      console.log(pizza)
-    }
+
   }
-  click(){
-    alert("click")
+  click(event:any){
+    console.log(event)
   }
 
 }

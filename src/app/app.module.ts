@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { OrderFormComponent } from './components/order-form/order-form.component';
 import {DataService} from "./services/data.service";
 import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {FormsModule} from "@angular/forms";
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

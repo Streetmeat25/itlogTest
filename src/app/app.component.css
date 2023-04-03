@@ -2,6 +2,7 @@
 .header{
   box-shadow: 0px 2px 20px -10px #989898;
   margin-bottom: 135px;
+  
 }
 .header-logo{
   display: flex;
@@ -46,6 +47,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 165px;
 }
 .info{
   display: flex;
@@ -111,7 +113,6 @@
   font-family: MullerBold;
   font-size: 35px;
   text-align: center;
-  margin-top: 165px;
   margin-bottom: 68px;
 }
 .pizzas{
@@ -174,6 +175,7 @@
   margin-left: 360px;
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 }
 .footer-info{
   display: flex;
@@ -192,7 +194,7 @@
   font-family: MullerExtraBold;
   font-size: 35px;
   line-height: 45px;
-  margin-bottom: 40px;
+  margin-bottom: 85px;
 }
 .footer-description{
   color: #b99150;
