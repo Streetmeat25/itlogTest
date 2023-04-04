@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../services/data.service";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-order-form',
@@ -21,9 +22,9 @@ export class OrderFormComponent{
 
   }
 
-  sendData(){
+  sendData(form: NgForm){
     alert("Спасибо за заказ")
-    this.dataService.postData(this.loginForm);
-    for(let i in this.loginForm) this.loginForm[i] = ''
+    this.dataService.postData(form.value);
+    form.reset()
   }
 }

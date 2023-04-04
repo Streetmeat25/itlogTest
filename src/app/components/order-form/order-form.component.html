@@ -1,9 +1,11 @@
 
-<div class="footer-form">
+<form  #orederForm="ngForm" class="footer-form" (ngSubmit)="sendData(orederForm)" novalidate>
+
   <input
     type="text"
     [(ngModel)]="loginForm.name"
     #name = "ngModel"
+    name = name
     class="footer-input"
     placeholder="Ваше имя"
     required
@@ -13,6 +15,7 @@
     type="text"
     [(ngModel)]="loginForm.address"
     #address = "ngModel"
+    name = address
     required
     class="footer-input" placeholder="Адрес доставки"
   >
@@ -22,11 +25,12 @@
     placeholder="Телефон"
     [(ngModel)]="loginForm.phone"
     #phone = "ngModel"
+    name = phone
     required
     pattern="[0-9]{11}"
   >
   <button class="my-button" [disabled]="(name.invalid && name.touched)
           || (address.invalid && address.touched)
           || (phone.invalid && phone.touched)"
-          (click)="sendData()" >Оформить заказ</button>
-</div>
+          type="submit" >Оформить заказ</button>
+</form>
