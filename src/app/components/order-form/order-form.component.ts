@@ -16,10 +16,7 @@ export class OrderFormComponent{
   }
   constructor(private dataService: DataService) {
   }
-  inputCheck(event:any){
-    this.loginForm.name = event.target.value.replace(/\./g, "")
 
-  }
 
   sendData(){
     alert("Спасибо за заказ")

@@ -7,12 +7,14 @@ import {DataService} from "./services/data.service";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { ModalComponent } from './components/modal/modal.component';
+import { FormDirective } from './components/order-form/form.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     OrderFormComponent,
-    ModalComponent
+    ModalComponent,
+    FormDirective
   ],
   imports: [
     BrowserModule,

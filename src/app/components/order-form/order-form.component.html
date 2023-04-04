@@ -6,9 +6,8 @@
     #name = "ngModel"
     class="footer-input"
     placeholder="Ваше имя"
-    required
-    (keyup)="inputCheck($event)"
-  >
+    inputrestriction="[^.]"
+    required>
   <input
     type="text"
     [(ngModel)]="loginForm.address"
