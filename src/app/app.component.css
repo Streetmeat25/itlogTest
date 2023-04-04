@@ -10,10 +10,11 @@
   flex: 0 1 35%;
 }
 .header-line {
+  margin: 0px auto;
+  max-width: 1200px;
   padding: 15px 0;
   display: flex;
   align-items: center;
-  margin: 0px 360px;
 }
 
 .header-logo-item{
@@ -36,7 +37,8 @@
 }
 
 .main{
-  margin:0px 360px;
+  margin: 0px auto;
+  max-width: 1200px;
 }
 
 .main{
@@ -172,10 +174,11 @@
 }
 
 .footer{
-  margin-left: 360px;
+  margin: 0px auto 100px auto;
+  max-width: 1200px;;
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  position: relative;
 }
 .footer-info{
   display: flex;
@@ -202,5 +205,11 @@
   font-size: 16px;
   line-height: 24px;
 }
+.footer-image img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
 
 
